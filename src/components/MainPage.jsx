@@ -11,7 +11,6 @@ export const MainPage = ({zacatek, zvrat, konec}) => {
         <StoryPart label="Zvrat" storyPart={zvrat} />
         <Divider />
         <StoryPart label="Konec pribehu" storyPart={konec} />
-        <StoryPartEdit label="Zacatek pribehu" />
       </Grid>
     );
 };

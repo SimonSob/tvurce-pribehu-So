@@ -22,6 +22,15 @@ function App() {
       {activeTab === "1" && 
         (<MainPage zacatek={zacatek} zvrat={zvrat} zaver={konec}/>)
       }
+      {activeTab === "2" && 
+        (<SetingPage 
+          zacatek={zacatek}
+          setZacatek={setZacatek}
+          zvrat={zvrat}
+          setZvrat={setZvrat}
+          zaver={konec}
+          setZaver/>)
+      }
     </>
   )
 }
