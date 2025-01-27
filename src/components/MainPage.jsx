@@ -1,7 +1,6 @@
 import { Divider } from '@mui/material';
 import Grid from '@mui/material/Grid2';
 import { StoryPart } from './StoryPart.jsx';
-import { StoryPartEdit } from './StoryPartEdit.jsx';
 
 export const MainPage = ({zacatek, zvrat, konec}) => {
     return (
