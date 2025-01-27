@@ -1,7 +1,7 @@
 import { Typography, TextField } from '@mui/material';
 import Grid from '@mui/material/Grid2';
 
-export const StoryPartEdit = ({ label, storyPart }) => {
+export const StoryPartEdit = ({ label, storyPart, setStoryPart }) => {
     return (
         <Grid size={10}>
           <TextField 
@@ -10,7 +10,8 @@ export const StoryPartEdit = ({ label, storyPart }) => {
            variant="outlined" 
            multiline 
            minRows={4} 
-           fullWidth 
+           fullWidth
+           onChange={(event) => {setStoryPart(event.target.value)}}
            value={storyPart} />
         </Grid>
     )
